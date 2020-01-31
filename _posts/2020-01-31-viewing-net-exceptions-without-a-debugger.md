@@ -10,7 +10,7 @@ I was debugging a process that was injected with a DLL written in C# in IDA, whe
 771835D2: Managed .NET exception (V4+) (exc.code e0434352, tid 11400)
 ```
 
-434352 is the ASCII code for CCR and it signifies a generic .NET exception. If we would be debugging the .NET code with Visual Studio, the IDE would take care of showing more details about the exception, but I couldn't get working breakpoints in disassembly while at the same time debugging the injected C# DLL.
+434352 is the ASCII code for CCR and it signifies a generic .NET exception. If we would be debugging the .NET code with Visual Studio, the IDE would take care of showing more details about the exception, but I couldn't get working breakpoints in disassembly while at the same time debugging the injected C# DLL. Googling for "IDA .net managed exceptions" and similar brought up nothing.
 
 ## WinDBG - can do, but no
 The WinDBG debugger allows debugging assembly, while .NET exceptions can be dissected using the SOS plugin:
