@@ -2,6 +2,7 @@
 layout: post
 title:  Viewing .NET Exceptions without a Debugger
 categories: [RE,.NET,IDA]
+comment_issue_id: 1
 ---
 ## e0434352 anyone?
 I was debugging a process that was injected with a DLL written in C# in IDA, when IDA reported an exception:

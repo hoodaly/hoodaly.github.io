@@ -30,10 +30,16 @@ layout: default
   <div>
     <p><span class="share-box">Share:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
   </div>
+  
+  <div class="post-content">
+  </div>
 
   <!--<div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>-->
-
-  {% include disqus.html %}
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+  {% include comments.html element=".post-content" github_account="hoodaly/hoodaly.github.io" require_cookie_consent="false" %}
 </article>

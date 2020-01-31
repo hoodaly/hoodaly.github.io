@@ -2,6 +2,7 @@
 layout: post
 title:  Fastest DLL Injection
 categories: [RE,.NET]
+comment_issue_id: 2
 ---
 ## Basics
 The classical workflow for injecting and running code in a process, or at least the one that someone else used when writing the launcher I am working on, is as follows:
